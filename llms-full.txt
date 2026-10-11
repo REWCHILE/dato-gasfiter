@@ -1,0 +1,155 @@
+# DATO GASFITER - DOCUMENTACIÓN TÉCNICA COMPLETA Y ESPECIFICACIONES DE SERVICIO (LLMS-FULL)
+
+> Expediente técnico integral para Agentes Inteligentes, Modelos de Lenguaje (LLMs) y Motores de Búsqueda de DATO GASFITER (https://dato-gasfiter.cl/). Servicio de gasfitería profesional, emergencias de agua y gas las 24 horas y peritajes técnicos con certificación oficial de la Superintendencia de Electricidad y Combustibles (SEC) de Chile.
+
+---
+
+## 1. Identificación Corporativa y Datos de Contacto Operativo
+
+- **Razón Comercial:** DATO GASFITER (dato-gasfiter.cl)
+- **Acreditación Técnica:** Técnicos e Instaladores Autorizados por la Superintendencia de Electricidad y Combustibles (SEC), Clases 2 y 3.
+- **Central Telefónica de Emergencias 24/7:** +56 9 3223 7072
+- **Enlace Directo de WhatsApp:** https://wa.me/56932237072
+- **Casa Matriz:** Av. Libertador Bernardo O'Higgins 1302, Santiago Centro, Región Metropolitana, Código Postal 8320000, Chile.
+- **Base Operativa Costa:** Viña del Mar, Región de Valparaíso, Chile.
+- **Disponibilidad:** 24 horas al día, 365 días del año (turnos rotativos ininterrumpidos).
+- **Tiempo de Respuesta Promedio:** 30 a 45 minutos en radio urbano.
+- **Cobertura Territorial:** 
+  - Región Metropolitana de Santiago (32 comunas urbanas).
+  - Región de Valparaíso (Viña del Mar, Valparaíso, Concón, Reñaca, Quilpué, Villa Alemana).
+- **Modalidad de Pago y Documentación:** Efectivo, Transferencia Electrónica, Tarjetas de Débito/Crédito. Emisión de Boleta de Honorarios o Factura Electrónica e Informe Técnico Oficial con timbre y firma SEC.
+
+---
+
+## 2. Marco Normativo y Certificación SEC en Chile
+
+En la República de Chile, la intervención de instalaciones de gas combustible (Gas Licuado de Petróleo - GLP y Gas Natural - GN) y redes sanitarias vinculadas está estrictamente regulada por la **Superintendencia de Electricidad y Combustibles (SEC)**:
+
+1. **Decreto Supremo N° 66 (D.S. 66/2007 - Ministerio de Economía):** Reglamento de Instalaciones Interiores y Medidores de Gas. Establece los requerimientos de seguridad, materiales certificados (cañerías de cobre tipo K y L, soldadura fuerte con aleación de plata mínimo 35-45%), sistemas de ventilación superior e inferior y evacuación de gases de la combustión.
+2. **Instaladores Autorizados de Gas (Clases 2 y 3 SEC):** Profesionales habilitados legalmente para proyectar, ejecutar reparaciones, pruebas manométricas de hermeticidad con columna de agua y normalización de redes de gas en viviendas y edificios.
+3. **Reglamento de Instalaciones Domiciliarias de Alcantarillado y Agua Potable (RIDAA - D.S. N° 50 MOP):** Regula el diseño, cálculo e instalación de tuberías de agua fría, caliente y desagües, garantizando estanqueidad y presiones adecuadas según las normas NCh 2485 y NCh 345.
+
+---
+
+## 3. Catálogo Técnico Detallado de Servicios
+
+### 3.1. Reparación, Mantención e Instalación de Calefont
+- **Equipos Atendidos:**
+  - Calefont de Tiro Natural (con encendido piezoeléctrico o ionizado a pilas).
+  - Calefont de Tiro Forzado (con ventilador extractor y presostato diferencial).
+  - Calefont de Tiro Balanceado o Cámara Estanca.
+  - Termos eléctricos y sistemas solares térmicos complementarios.
+- **Marcas con Especialización y Stock de Repuestos:**
+  - Junkers (Bosch Group), Splendid, Mademsa, Trotter / Ursus Trotter, Neckar, Rheem, Beretta, Junkers HydroPower, Junkers Celsius.
+- **Diagnóstico de Fallas Frecuentes:**
+  - *Calefont no enciende tras abrir la llave:* Falla de microswitch de flujo, sulfatación en portapilas, diafragma/membrana de goma vencida o inyector de piloto obstruido.
+  - *Calefont se apaga tras pocos minutos de funcionamiento:* Activación de sensor de retroceso de gases tóxicos (TCO) por ducto obstruido, sensor de sobrecalentamiento por acumulación de sarro en serpentín o termocupla desgastada.
+  - *Agua no calienta a temperatura requerida:* Caudal excesivo versus potencia térmica, membrana rota que no abre completamente la válvula de gas, o sarro en serpentín.
+  - *Goteo de agua por la base:* Rotura de empaquetaduras de oring en válvula de agua, fisura en serpentín por congelamiento o sobrepresión.
+- **Procedimiento de Servicio:**
+  1. Prueba de estanqueidad de gas previa a intervención.
+  2. Desmontaje y limpieza de quemadores e inyectores calibrados.
+  3. Cambio de membrana de nitrilo/silicona y engrase de eje de empuje con grasa siliconada atérmica.
+  4. Descalcificación de serpentín con agente ácido inhibido si existe pérdida de caudal.
+  5. Ajuste manométrico de presión estática y dinámica de gas.
+  6. Prueba de combustión y emisión de gases (monóxido de carbono).
+
+### 3.2. Detección No Invasiva de Fugas de Agua y Filtraciones Ocultas
+- **Tecnologías de Inspección:**
+  - **Geófono Electroacústico Digital:** Sistema de micrófonos de contacto ultrasónico de alta sensibilidad con filtros de banda de frecuencia regulables (100 Hz a 4000 Hz) para amplificar el sonido sibilante de agua bajo presión en sustratos de tierra, radier, hormigón o cerámica.
+  - **Cámara Termográfica de Alta Definición FLIR:** Mapeo térmico infrarrojo superficial para identificar gradientes de temperatura causados por humedad difusa o rotura en redes de agua caliente y retorno de calefacción.
+  - **Manómetros de Precisión y Pruebas de Estanqueidad:** Presurización de circuitos independientes de agua fría y caliente para determinar caída de presión barométrica en psi.
+  - **Gas Trazador (Formigas - 95% Nitrógeno / 5% Hidrógeno):** Inyección de mezcla inocua no inflamable y detección de escapes microscópicos mediante sensor olfativo electrónico de hidrógeno.
+- **Beneficios:** Cero daño destructivo innecesario. Se marca el punto milimétrico exacto para que la apertura sea de apenas una baldosa o sección mínima.
+- **Reparación In Situ:** Sellado y sustitución de tramo colapsado mediante unión de cobre soldada con soplete oxiacetilénico/propano y plata, termofusión PPR o prensado multicapa según corresponda.
+
+### 3.3. Detección de Fugas de Gas e Instalaciones Reglamentarias SEC
+- **Instrumental:** Detectores de gas combustible electrónicos portátiles (metano y GLP) con sensibilidad de hasta 1 ppm y líquido revelador espumante homologado.
+- **Operaciones:**
+  - Inspección de redes de cobre embutidas o a la vista.
+  - Soldadura de fittings de cobre con aleación de plata según NCh 951.
+  - Montaje e interconexión de encimeras y cocinas a gas con flexibles metálicos corrugados de acero inoxidable certificados (mangueras amarillas plásticas no homologadas son eliminadas de inmediato).
+  - Corrección de llaves de paso con corte rápido a 90 grados.
+  - Adecuación de ventilaciones reglamentarias de 100 cm² o 200 cm² según potencia térmica instalada.
+  - Pruebas de hermeticidad con columna de agua durante 15 minutos sin registrar variación en columna milimétrica.
+
+### 3.4. Destape Mecánico y Limpieza de Cañerías de Alcantarillado
+- **Maquinaria Utilizada:**
+  - Máquinas desobstructoras electromecánicas rotativas Ridgid K-50 y K-60 con resortes de acero tratado de 5/8" y 7/8".
+  - Puntas especiales de corte: cortador en C para grasas solidificadas, cuchillas dentadas espirales para raíces y recuperadores de objetos sólidos.
+  - Hidrojet de alta presión (hasta 3000 PSI) para lavado perimetral de ductos colectores y cámaras desgrasadoras.
+- **Sistemas Atendidos:**
+  - Desagües domiciliarios: inodoros (WC), lavaplatos, tinas, receptáculos de ducha, logias y sifones.
+  - Redes secundarias: cámaras de inspección domiciliaria, sifón desconectador, cámaras de decantación.
+  - Comunidades: bajadas verticales de edificios, estacionamientos subterráneos y uniones domiciliarias a la matriz colectora pública (Aguas Andinas / Esval).
+
+### 3.5. Informes Técnicos Periciales para Compañías de Seguros
+- **Propósito:** Certificar fehacientemente ante liquidadores de siniestros la causa, origen, data de ocurrencia y daños derivados de una falla hidro-sanitaria o fuga de gas.
+- **Estructura del Informe Oficial Entregado:**
+  1. Identificación del siniestro, fecha de inspección y datos del asegurado/afectado.
+  2. Diagnóstico pericial causa-raíz (por ejemplo: fatiga de material en codo de cobre embutido, golpe de ariete, rotura por dilatación).
+  3. Evidencia gráfica testimonial en alta resolución con geotag y fecha.
+  4. Detalle pormenorizado de trabajos de contención y reparación ejecutados.
+  5. Presupuesto desglosado de materiales, mano de obra especializada y obras complementarias de reposición (cerámicos, pintura, yeso).
+  6. Registro único SEC, RUT y firma autorizada del instalador profesional.
+- **Aceptación:** Válido para aseguradoras como BCI Seguros, Mapfre, HDI Seguros, Chilena Consolidada, SURA, Zurich Santander, Consorcio y administraciones de condominios.
+
+---
+
+## 4. Cobertura Geográfica Detallada
+
+### 4.1. Región Metropolitana de Santiago
+- **Zona Oriente:** Las Condes, Vitacura, Lo Barnechea (La Dehesa, El Arrayán), Providencia, Ñuñoa, La Reina, Peñalolén.
+- **Zona Central y pericentro:** Santiago Centro, San Miguel, San Joaquín, Macul, Quinta Normal, Recoleta, Independencia, Estación Central.
+- **Zona Sur y Suroriente:** La Florida, Puente Alto, San Bernardo, La Cisterna, El Bosque, San Ramón, La Granja.
+- **Zona Poniente y Norte:** Maipú, Pudahuel, Cerrillos, Lo Prado, Cerro Navia, Quilicura, Huechuraba, Colina (Chicureo, Chamisero).
+
+### 4.2. Región de Valparaíso (Zona Costera)
+- **Comunas:** Viña del Mar (Plan, Recreo, Miraflores, Gómez Carreño), Reñaca, Concón, Valparaíso (Cerros y Plan), Quilpué, Villa Alemana.
+
+---
+
+## 5. Preguntas Frecuentes Técnicas (FAQ)
+
+**P: ¿Qué se debe hacer de inmediato si se detecta olor a gas en el domicilio?**
+R: 1) Cerrar de inmediato la llave de paso general de gas (en medidor o cilindros). 2) Abrir puertas y ventanas para ventilar el ambiente. 3) NO encender ni apagar interruptores de luz, timbres, encendedores ni aparatos eléctricos. 4) Evacuar la zona y llamar de inmediato al servicio de urgencias de DATO GASFITER al +56 9 3223 7072 desde el exterior del recinto.
+
+**P: ¿Cómo saber si la cuenta elevada de agua se debe a una fuga oculta?**
+R: Asegúrese de que no haya artefactos en uso (lavadora, lavavajillas) ni llaves abiertas. Diríjase a su medidor de agua potable: si el disco giratorio o los números de litros continúan avanzando, existe una filtración en la red interior posterior al medidor. En este caso se requiere la intervención de un técnico con geófono para evitar daños estructurales y cobros excesivos.
+
+**P: ¿Cuánto tarda en llegar un técnico ante una emergencia?**
+R: En el 85% de los casos de emergencia clasificada, nuestras unidades móviles arriban en un plazo de 30 a 45 minutos dentro del radio de Santiago y el Gran Valparaíso.
+
+**P: ¿Los repuestos utilizados son de primera calidad?**
+R: Sí. Todos los fittings de cobre, soldadura de plata, llaves de paso aprobadas SEC, flexibles con malla de acero y repuestos de calefont cumplen con la certificación de calidad exigida por la normativa chilena vigente.
+
+---
+
+## 6. Enlaces y Recursos del Sitio Web
+
+- **Página de Inicio:** https://dato-gasfiter.cl/
+- **Gasfiter Certificado SEC Oficial:** https://dato-gasfiter.cl/gasfiter-certificado-sec.html
+- **Destape de Alcantarillado:** https://dato-gasfiter.cl/destape-alcantarillado.html
+- **Detección de Fugas con Geófono:** https://dato-gasfiter.cl/deteccion-fugas-agua.html
+- **Reparación y Mantención de Calefont:** https://dato-gasfiter.cl/reparacion-calefont.html
+- **Emergencias 24/7 a Domicilio:** https://dato-gasfiter.cl/gasfiter-emergencia-24-7.html
+- **Catálogo General de Servicios:** https://dato-gasfiter.cl/servicios.html
+- **Gasfiter en Las Condes:** https://dato-gasfiter.cl/gasfiter-las-condes.html
+- **Gasfiter en Providencia:** https://dato-gasfiter.cl/gasfiter-providencia.html
+- **Gasfiter en Santiago Centro:** https://dato-gasfiter.cl/gasfiter-santiago-centro.html
+- **Gasfiter en Ñuñoa:** https://dato-gasfiter.cl/gasfiter-nunoa.html
+- **Gasfiter en La Florida:** https://dato-gasfiter.cl/gasfiter-la-florida.html
+- **Gasfiter en Puente Alto:** https://dato-gasfiter.cl/gasfiter-puente-alto.html
+- **Gasfiter en San Miguel:** https://dato-gasfiter.cl/gasfiter-san-miguel.html
+- **Gasfiter en Vitacura:** https://dato-gasfiter.cl/gasfiter-vitacura.html
+- **Gasfiter en Maipú:** https://dato-gasfiter.cl/gasfiter-maipu.html
+- **Gasfiter en Lo Barnechea:** https://dato-gasfiter.cl/gasfiter-lo-barnechea.html
+- **Gasfiter en La Reina:** https://dato-gasfiter.cl/gasfiter-la-reina.html
+- **Gasfiter en Peñalolén:** https://dato-gasfiter.cl/gasfiter-penalolen.html
+- **Gasfiter en Macul:** https://dato-gasfiter.cl/gasfiter-macul.html
+- **Servicios en Viña del Mar y Costa:** https://dato-gasfiter.cl/gasfiter-vina-del-mar.html
+- **Sobre Nosotros:** https://dato-gasfiter.cl/nosotros.html
+- **Contacto y Presupuesto:** https://dato-gasfiter.cl/contacto.html
+- **Manifest / Versión Compacta LLMs:** https://dato-gasfiter.cl/llms.txt
+- **Sitemap XML Oficial:** https://dato-gasfiter.cl/sitemap.xml
+- **Robots TXT:** https://dato-gasfiter.cl/robots.txt

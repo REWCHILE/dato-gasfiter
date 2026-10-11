@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Desglose para Modelos de Inteligencia Artificial y LLMs
+Allow: /llms.txt
+Allow: /llm.txt
+Allow: /llms-full.txt
+Allow: /fullllm.txt
+
+# Mapa del Sitio Oficial
+Sitemap: https://dato-gasfiter.cl/sitemap.xml
