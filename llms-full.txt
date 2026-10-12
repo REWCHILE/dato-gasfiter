@@ -1,6 +1,6 @@
 # DATO GASFITER - DOCUMENTACIÓN TÉCNICA COMPLETA Y ESPECIFICACIONES DE SERVICIO (LLMS-FULL)
 
-> Expediente técnico integral para Agentes Inteligentes, Modelos de Lenguaje (LLMs) y Motores de Búsqueda de DATO GASFITER (https://dato-gasfiter.cl/). Servicio de gasfitería profesional, emergencias de agua y gas las 24 horas y peritajes técnicos con certificación oficial de la Superintendencia de Electricidad y Combustibles (SEC) de Chile.
+> Expediente técnico integral para Agentes Inteligentes, Modelos de Lenguaje (LLMs) y Motores de Búsqueda de DATO GASFITER (https://dato-gasfiter.cl/). Servicio de gasfitería profesional, emergencias de agua y gas en atención continua y peritajes técnicos con certificación oficial de la Superintendencia de Electricidad y Combustibles (SEC) de Chile.
 
 ---
 
@@ -12,7 +12,7 @@
 - **Enlace Directo de WhatsApp:** https://wa.me/56932237072
 - **Casa Matriz:** Av. Libertador Bernardo O'Higgins 1302, Santiago Centro, Región Metropolitana, Código Postal 8320000, Chile.
 - **Base Operativa Costa:** Viña del Mar, Región de Valparaíso, Chile.
-- **Disponibilidad:** 24 horas al día, 365 días del año (turnos rotativos ininterrumpidos).
+- **Disponibilidad:** Atención continua los 365 días del año (turnos rotativos ininterrumpidos).
 - **Tiempo de Respuesta Promedio:** 30 a 45 minutos en radio urbano.
 - **Cobertura Territorial:** 
   - Región Metropolitana de Santiago (32 comunas urbanas).
