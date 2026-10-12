@@ -2050,7 +2050,7 @@ ul {
     display: none !important;
   }
   .hero-video-container {
-    background-image: url('../assets/images/hero-bg-poster.webp');
+    background-image: url('../assets/images/hero-bg-poster-mobile.webp');
     background-size: cover;
     background-position: center;
   }

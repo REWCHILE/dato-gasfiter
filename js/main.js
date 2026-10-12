@@ -7,9 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileDrawer();
   initFaqAccordion();
   initComunasTabs();
-  initHeaderScroll();
+  initScrollEffects();
   initQuickQuote();
-  initScrollToTop();
 });
 
 /**
@@ -164,22 +163,75 @@ function initComunasTabs() {
 }
 
 /**
- * 4. HEADER TRANSIENT ON SCROLL
+ * 4. GESTIÓN EFICIENTE DE SCROLL (HEADER STICKY + BOTÓN VOLVER ARRIBA)
+ * Optimizado contra Forced Reflow y Tareas Largas (0 layout thrashing)
  */
-function initHeaderScroll() {
+function initScrollEffects() {
   const header = document.querySelector('.site-header');
-  if (!header) return;
+  const backToTopBtn = document.getElementById('backToTopBtn');
+  if (!header && !backToTopBtn) return;
 
-  const handleScroll = () => {
-    if (window.scrollY > 20) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
+  let isHeaderScrolled = false;
+  let isBackToTopVisible = false;
+  let ticking = false;
+
+  function updateScrollState() {
+    const scrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+
+    // Header sticky styling
+    if (header) {
+      const shouldBeScrolled = scrollY > 20;
+      if (shouldBeScrolled !== isHeaderScrolled) {
+        isHeaderScrolled = shouldBeScrolled;
+        if (shouldBeScrolled) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      }
     }
-  };
 
-  window.addEventListener('scroll', handleScroll, { passive: true });
-  handleScroll();
+    // Botón volver arriba
+    if (backToTopBtn) {
+      const shouldShowBtn = scrollY > 250;
+      if (shouldShowBtn !== isBackToTopVisible) {
+        isBackToTopVisible = shouldShowBtn;
+        if (shouldShowBtn) {
+          backToTopBtn.classList.add('is-visible');
+        } else {
+          backToTopBtn.classList.remove('is-visible');
+        }
+      }
+    }
+
+    ticking = false;
+  }
+
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(updateScrollState);
+      ticking = true;
+    }
+  }
+
+  // Listener pasivo para máxima fluidez a 60/120 fps
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Ejecución inicial diferida al siguiente frame para no bloquear DOMContentLoaded
+  if (window.requestAnimationFrame) {
+    window.requestAnimationFrame(updateScrollState);
+  } else {
+    setTimeout(updateScrollState, 0);
+  }
+
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
 }
 
 /**
@@ -209,33 +261,6 @@ function initQuickQuote() {
       const url = `https://wa.me/56932237072?text=${encoded}`;
 
       window.open(url, '_blank', 'noopener,noreferrer');
-    });
-  });
-}
-
-/**
- * 6. BOTÓN VOLVER ARRIBA (SCROLL TO TOP)
- */
-function initScrollToTop() {
-  const btn = document.getElementById('backToTopBtn');
-  if (!btn) return;
-
-  const toggleVisibility = () => {
-    // Aparece cuando el usuario scrollea hacia abajo (más de 250px)
-    if (window.scrollY > 250) {
-      btn.classList.add('is-visible');
-    } else {
-      btn.classList.remove('is-visible');
-    }
-  };
-
-  window.addEventListener('scroll', toggleVisibility, { passive: true });
-  toggleVisibility();
-
-  btn.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
     });
   });
 }
