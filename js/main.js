@@ -51,14 +51,37 @@ function initMobileDrawer() {
   });
 
   if (drawerCloseBtn) {
-    drawerCloseBtn.addEventListener('click', closeDrawer);
+    drawerCloseBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeDrawer();
+    });
   }
 
-  drawerOverlay.addEventListener('click', closeDrawer);
+  drawerOverlay.addEventListener('click', (e) => {
+    e.stopPropagation();
+    closeDrawer();
+  });
+
+  // Evita que clics dentro del drawer se propaguen accidentalmente al overlay
+  mobileDrawer.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
 
   // Cerrar al hacer clic en enlaces del drawer
   drawerLinks.forEach(link => {
-    link.addEventListener('click', closeDrawer);
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (href) {
+        const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
+        const linkPath = href.split('#')[0].replace(/\/$/, '') || '/';
+        if (linkPath === currentPath && !href.includes('#')) {
+          e.preventDefault();
+          closeDrawer();
+          return;
+        }
+      }
+      closeDrawer();
+    });
   });
 
   // Cerrar con tecla Escape
