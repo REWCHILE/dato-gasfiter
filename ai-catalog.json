@@ -1,51 +1,29 @@
 {
-  "$schema": "https://agenticresourcediscovery.org/schemas/v1/ai-catalog.schema.json",
-  "name": "DATO GASFITER - Servicios de Gasfitería Certificada SEC",
-  "description": "Catálogo oficial para agentes autónomos de IA y LLMs para solicitar presupuestos, información y turnos de urgencia con gasfíteres autorizados SEC en la Región Metropolitana (Santiago) y Región de Valparaíso (Viña del Mar).",
-  "url": "https://dato-gasfiter.cl",
-  "provider": {
-    "name": "DATO GASFITER",
-    "url": "https://dato-gasfiter.cl",
-    "contact": "+56932237072"
+  "$schema": "https://raw.githubusercontent.com/ards-project/ard-spec/main/spec/schemas/ai-catalog.schema.json",
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "DATO GASFITER",
+    "documentationUrl": "https://dato-gasfiter.cl/"
   },
-  "capabilities": [
+  "entries": [
     {
-      "type": "webmcp-tool",
-      "name": "solicitar_gasfiter",
-      "title": "Solicitud y Cotización de Gasfiter Certificado SEC",
-      "description": "Herramienta directa para que agentes autónomos de IA puedan cotizar o solicitar visita técnica de urgencia para reparación de calefont, filtraciones de agua, destapes e instalaciones SEC.",
-      "inputSchema": {
-        "type": "object",
-        "properties": {
-          "servicio": {
-            "type": "string",
-            "description": "Tipo de servicio requerido: reparacion-calefont, deteccion-fugas, destape-alcantarillado, gas-sec, informe-tecnico o emergencia."
-          },
-          "comuna": {
-            "type": "string",
-            "description": "Comuna o ciudad del cliente (ej. Santiago Centro, Providencia, Las Condes, Vitacura, Viña del Mar)."
-          },
-          "nombre": {
-            "type": "string",
-            "description": "Nombre del cliente solicitante."
-          },
-          "detalle": {
-            "type": "string",
-            "description": "Breve descripción de la falla o requerimiento técnico."
-          }
-        },
-        "required": [
-          "servicio",
-          "comuna"
-        ],
-        "additionalProperties": false
-      },
-      "endpoint": "https://dato-gasfiter.cl/"
+      "identifier": "urn:ai:dato-gasfiter.cl:tools:solicitar-gasfiter",
+      "displayName": "Solicitud y Cotización de Gasfiter SEC a Domicilio",
+      "type": "application/json",
+      "url": "https://dato-gasfiter.cl/.well-known/mcp.json",
+      "description": "Permite a agentes de IA y LLMs solicitar asistencia técnica o cotización de gasfitería certificada SEC en Santiago y Viña del Mar ante emergencias o presupuestos.",
+      "capabilities": [
+        "ReparacionCalefont",
+        "DeteccionFugasAgua",
+        "DestapeAlcantarillado",
+        "FugasGasSEC",
+        "EmergenciasDomicilio"
+      ],
+      "representativeQueries": [
+        "Buscar gasfiter urgente a domicilio en Santiago",
+        "Reparar calefont en Las Condes Providencia o Santiago Centro",
+        "Detectar fuga de agua oculta con geofono sin romper"
+      ]
     }
-  ],
-  "resources": {
-    "llms_manifest": "https://dato-gasfiter.cl/llms.txt",
-    "llms_full_manifest": "https://dato-gasfiter.cl/llms-full.txt",
-    "sitemap": "https://dato-gasfiter.cl/sitemap.xml"
-  }
+  ]
 }

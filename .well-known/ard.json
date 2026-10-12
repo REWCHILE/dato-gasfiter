@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/ards-project/ard-spec/main/spec/schemas/ai-catalog.schema.json",
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "DATO GASFITER",
+    "documentationUrl": "https://dato-gasfiter.cl/"
+  },
+  "entries": [
+    {
+      "identifier": "urn:ai:dato-gasfiter.cl:tools:solicitar-gasfiter",
+      "displayName": "Solicitud y Cotización de Gasfiter SEC a Domicilio",
+      "type": "application/json",
+      "url": "https://dato-gasfiter.cl/.well-known/mcp.json",
+      "description": "Permite a agentes de IA y LLMs solicitar asistencia técnica o cotización de gasfitería certificada SEC en Santiago y Viña del Mar ante emergencias o presupuestos.",
+      "capabilities": [
+        "ReparacionCalefont",
+        "DeteccionFugasAgua",
+        "DestapeAlcantarillado",
+        "FugasGasSEC",
+        "EmergenciasDomicilio"
+      ],
+      "representativeQueries": [
+        "Buscar gasfiter urgente a domicilio en Santiago",
+        "Reparar calefont en Las Condes Providencia o Santiago Centro",
+        "Detectar fuga de agua oculta con geofono sin romper"
+      ]
+    }
+  ]
+}
