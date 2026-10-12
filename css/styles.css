@@ -296,7 +296,27 @@ ul {
   .nav-desktop {
     display: flex;
     align-items: center;
-    gap: 1.75rem;
+    gap: 1.35rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1220px) {
+  .nav-desktop {
+    gap: 0.85rem;
+  }
+  .nav-link {
+    font-size: 0.88rem !important;
+  }
+  .header-actions {
+    gap: 0.45rem;
+  }
+  .btn-header-call {
+    padding: 0.42rem 0.7rem;
+    font-size: 0.82rem;
+  }
+  .btn-header-urgent {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.82rem;
   }
 }
 
@@ -306,6 +326,7 @@ ul {
   color: var(--color-primary);
   position: relative;
   padding: 0.5rem 0;
+  white-space: nowrap;
 }
 
 .nav-link::after {
