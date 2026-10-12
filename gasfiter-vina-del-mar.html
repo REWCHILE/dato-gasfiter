@@ -19,14 +19,12 @@
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <meta name="theme-color" content="#00276a">
 
-  <!-- Preconnect y Carga Optimizada de Fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap">
+  <!-- Preload Prioritario de Fuentes Locales (0ms Terceros) -->
+  <link rel="preload" href="/assets/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="preload" href="/css/styles.min.css?v=3.8" as="style">
-  <link rel="stylesheet" href="/css/styles.min.css?v=3.8">
+  <link rel="preload" href="/css/styles.min.css?v=4.0" as="style">
+  <link rel="stylesheet" href="/css/styles.min.css?v=4.0">
 
   <!-- SCHEMA.ORG JSON-LD -->
   <script type="application/ld+json">
@@ -705,6 +703,6 @@
     <a href="https://wa.me/56932237072?text=Hola,%20necesito%20un%20gasfiter%20en%20Viña%20del%20Mar" target="_blank" rel="noopener noreferrer" class="btn-bottom-wa"><span>WhatsApp Inmediato</span></a>
   </div>
 
-  <script src="js/main.js?v=3.5" defer></script>
+  <script src="js/main.js?v=3.6" defer></script>
 </body>
 </html>

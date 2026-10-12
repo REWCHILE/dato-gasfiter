@@ -4,12 +4,27 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // 1. Tarea Crítica Inmediata: Drawer móvil (< 10ms)
   initMobileDrawer();
-  initFaqAccordion();
-  initComunasTabs();
-  initScrollEffects();
-  initQuickQuote();
+
+  // 2. Programador de tareas diferidas para mantener el hilo principal siempre libre (< 50ms)
+  const scheduleTask = typeof window.requestIdleCallback === 'function'
+    ? (cb) => window.requestIdleCallback(cb, { timeout: 1500 })
+    : (cb) => setTimeout(cb, 16);
+
+  // Tarea diferida 1: Manejador de scroll eficiente
+  scheduleTask(() => {
+    initScrollEffects();
+  });
+
+  // Tarea diferida 2: Componentes interactivos bajo el pliegue (Acordeón, Tabs, Formularios)
+  scheduleTask(() => {
+    initFaqAccordion();
+    initComunasTabs();
+    initQuickQuote();
+  });
 });
+
 
 /**
  * 1. NAVEGACIÓN MÓVIL (DRAWER DESLIZABLE DE IZQUIERDA A DERECHA)
