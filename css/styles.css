@@ -1373,9 +1373,10 @@ ul {
   margin-bottom: 0.75rem;
 }
 
-/* Badge o Box en Hero de Páginas de Servicios y Comunas (Fondo Rojo con letras blancas) */
-.hero-section .section-tag,
-.hero-text-content .section-tag {
+/* Badge o Box en Hero de Páginas de Servicios (Fondo Rojo con letras blancas) */
+.hero-text-content .section-tag,
+.hero-section > .container > .section-tag,
+.hero-section > .container > div:not(.hero-grid) .section-tag {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
@@ -1394,8 +1395,9 @@ ul {
   text-transform: uppercase;
 }
 
-.hero-section .section-tag::before,
-.hero-text-content .section-tag::before {
+.hero-text-content .section-tag::before,
+.hero-section > .container > .section-tag::before,
+.hero-section > .container > div:not(.hero-grid) .section-tag::before {
   content: '';
   display: inline-block;
   width: 7px;
@@ -1406,22 +1408,32 @@ ul {
   flex-shrink: 0;
 }
 
-/* En tarjetas blancas dentro del hero (como el formulario de peritajes), mantener tag azul estándar */
-.hero-section .hero-card .section-tag,
-.hero-card .section-tag {
+/* En tarjetas blancas del hero (formulario de cotización/peritaje), etiqueta azul de alto contraste */
+.hero-card .section-tag,
+.hero-card-header .section-tag,
+.hero-card span.section-tag {
+  display: inline-block !important;
   color: #0047ba !important;
-  background: rgba(0, 71, 186, 0.09) !important;
-  border: none !important;
+  background: rgba(0, 71, 186, 0.08) !important;
+  border: 1px solid rgba(0, 71, 186, 0.16) !important;
   box-shadow: none !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   padding: 0.35rem 0.85rem !important;
+  font-size: 0.82rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  border-radius: var(--radius-full) !important;
   text-shadow: none !important;
+  margin-bottom: 0.5rem !important;
 }
 
-.hero-section .hero-card .section-tag::before,
-.hero-card .section-tag::before {
+.hero-card .section-tag::before,
+.hero-card-header .section-tag::before,
+.hero-card span.section-tag::before {
   display: none !important;
+  content: none !important;
 }
 
 .section-title {
