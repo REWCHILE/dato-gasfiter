@@ -8,16 +8,20 @@ RewriteBase /
 RewriteCond %{HTTP_HOST} ^www\.dato-gasfiter\.cl$ [NC]
 RewriteRule ^(.*)$ https://dato-gasfiter.cl/$1 [R=301,L]
 
-# 2. Si se solicita un archivo con extensión .html, redirigir a URL limpia (301)
+# 2. Redirección canónica 301 de /index o /index.html hacia la raíz /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+index(\.html)?[\s?] [NC]
+RewriteRule ^ / [R=301,L]
+
+# 3. Si se solicita cualquier otro archivo con extensión .html, redirigir a URL limpia (301)
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/([^.]+)\.html [NC]
 RewriteRule ^ %1 [R=301,L]
 
-# 3. Reescribir internamente la URL limpia hacia el archivo .html existente
+# 4. Reescribir internamente la URL limpia hacia el archivo .html existente
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^.]+)$ $1.html [L]
 
-# 4. Seguridad
+# 5. Seguridad
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
   Header always set X-Frame-Options "SAMEORIGIN"

@@ -3,149 +3,155 @@
   <!-- PRINCIPAL -->
   <url>
     <loc>https://dato-gasfiter.cl/</loc>
-    <lastmod>2026-10-11</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- PÁGINA PILAR CERTIFICACIÓN SEC (1.000 - 10.000 BÚSQUEDAS) -->
+  <!-- PÁGINA PILAR CERTIFICACIÓN SEC -->
   <url>
-    <loc>https://dato-gasfiter.cl/gasfiter-certificado-sec.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/gasfiter-certificado-sec</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.98</priority>
   </url>
 
   <!-- SERVICIOS PILAR DE ALTO VOLUMEN Y ALTO CPC -->
   <url>
-    <loc>https://dato-gasfiter.cl/destape-alcantarillado.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/destape-alcantarillado</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://dato-gasfiter.cl/deteccion-fugas-agua.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/deteccion-fugas-agua</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://dato-gasfiter.cl/reparacion-calefont.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/reparacion-calefont</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://dato-gasfiter.cl/gasfiter-emergencia-24-7.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/informes-tecnicos-sec</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://dato-gasfiter.cl/servicios.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/gasfiter-emergencia-urgencias</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://dato-gasfiter.cl/servicios</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
 
-  <!-- LANDINGS LOCALES COMUNAS RM (GOOGLE ADS / SEO LOCAL) -->
+  <!-- LANDINGS LOCALES COMUNAS RM (SEO LOCAL) -->
   <url>
-    <loc>https://dato-gasfiter.cl/gasfiter-las-condes.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/gasfiter-las-condes</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://dato-gasfiter.cl/gasfiter-providencia.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/gasfiter-providencia</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://dato-gasfiter.cl/gasfiter-santiago-centro.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/gasfiter-santiago-centro</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://dato-gasfiter.cl/gasfiter-nunoa.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/gasfiter-nunoa</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://dato-gasfiter.cl/gasfiter-la-florida.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/gasfiter-la-florida</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://dato-gasfiter.cl/gasfiter-puente-alto.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/gasfiter-puente-alto</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://dato-gasfiter.cl/gasfiter-maipu.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/gasfiter-maipu</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://dato-gasfiter.cl/gasfiter-san-miguel.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/gasfiter-san-miguel</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://dato-gasfiter.cl/gasfiter-vitacura.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/gasfiter-vitacura</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://dato-gasfiter.cl/gasfiter-lo-barnechea.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/gasfiter-lo-barnechea</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://dato-gasfiter.cl/gasfiter-la-reina.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/gasfiter-la-reina</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://dato-gasfiter.cl/gasfiter-penalolen.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/gasfiter-penalolen</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://dato-gasfiter.cl/gasfiter-macul.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/gasfiter-macul</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <!-- V REGIÓN COSTA -->
   <url>
-    <loc>https://dato-gasfiter.cl/gasfiter-vina-del-mar.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/gasfiter-vina-del-mar</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
   </url>
 
   <!-- INSTITUCIONALES -->
   <url>
-    <loc>https://dato-gasfiter.cl/nosotros.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/nosotros</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://dato-gasfiter.cl/contacto.html</loc>
-    <lastmod>2026-10-11</lastmod>
+    <loc>https://dato-gasfiter.cl/contacto</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>

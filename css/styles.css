@@ -293,32 +293,54 @@ ul {
   color: var(--color-accent);
 }
 
-/* Dropdown */
+/* Dropdowns Globales */
 .nav-item-dropdown {
   position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .dropdown-trigger {
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.35rem;
+  cursor: pointer;
+}
+
+.dropdown-trigger svg {
+  transition: transform var(--transition-fast);
+}
+
+.nav-item-dropdown:hover .dropdown-trigger svg {
+  transform: rotate(180deg);
 }
 
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: calc(100% - 6px);
   left: 0;
-  min-width: 250px;
+  min-width: 260px;
   background: var(--color-surface-white);
-  border: 1px solid var(--color-border);
+  border: 1px solid rgba(226, 232, 240, 0.95);
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-xl);
-  padding: 0.5rem 0;
+  box-shadow: 0 20px 35px -5px rgba(0, 39, 106, 0.16), 0 8px 16px -4px rgba(0, 39, 106, 0.08);
+  padding: 0.6rem;
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
   transition: all var(--transition-fast);
-  z-index: 100;
+  z-index: 1000;
+}
+
+/* Puente invisible para evitar que el hover se pierda */
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: 0;
+  right: 0;
+  height: 16px;
 }
 
 .nav-item-dropdown:hover .dropdown-menu {
@@ -329,16 +351,229 @@ ul {
 
 .dropdown-item {
   display: block;
-  padding: 0.6rem 1.25rem;
-  font-size: 0.9rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.88rem;
   font-weight: 500;
   color: var(--color-text-title);
-  transition: background var(--transition-fast), color var(--transition-fast);
+  border-radius: var(--radius-sm);
+  transition: background var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
 }
 
 .dropdown-item:hover {
-  background: var(--color-surface-muted);
+  background: rgba(0, 90, 233, 0.06);
   color: var(--color-accent);
+  transform: translateX(2px);
+}
+
+/* Mega Dropdown Servicios Desktop */
+.dropdown-menu-services {
+  min-width: 370px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  border-radius: 14px;
+}
+
+.dropdown-service-link {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  background: transparent;
+}
+
+.dropdown-service-link:hover {
+  background: rgba(0, 90, 233, 0.06);
+  transform: translateX(3px);
+}
+
+.dropdown-service-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.dropdown-service-link:hover .dropdown-service-icon {
+  transform: scale(1.08);
+}
+
+.dropdown-service-icon.icon-calefont {
+  background: rgba(239, 68, 68, 0.12);
+  color: #dc2626;
+}
+
+.dropdown-service-icon.icon-fugas {
+  background: rgba(2, 132, 199, 0.12);
+  color: #0284c7;
+}
+
+.dropdown-service-icon.icon-gas {
+  background: rgba(217, 119, 6, 0.12);
+  color: #d97706;
+}
+
+.dropdown-service-icon.icon-destape {
+  background: rgba(5, 150, 105, 0.12);
+  color: #059669;
+}
+
+.dropdown-service-icon.icon-informes {
+  background: rgba(79, 70, 229, 0.12);
+  color: #4f46e5;
+}
+
+.dropdown-service-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.dropdown-service-title {
+  font-family: var(--font-heading);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.25;
+}
+
+.dropdown-service-desc {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  line-height: 1.3;
+  margin-top: 2px;
+}
+
+.dropdown-service-arrow {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.dropdown-service-link:hover .dropdown-service-arrow {
+  color: var(--color-accent);
+  transform: translateX(3px);
+}
+
+.dropdown-services-footer {
+  margin-top: 0.35rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.dropdown-services-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.dropdown-services-footer a:hover {
+  color: var(--color-accent-light);
+  text-decoration: underline;
+}
+
+/* Dropdown Comunas Desktop */
+.dropdown-menu-comunas {
+  min-width: 330px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem;
+  padding: 0.65rem;
+  border-radius: 14px;
+}
+
+.dropdown-menu-comunas .dropdown-item {
+  padding: 0.45rem 0.7rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+}
+
+.dropdown-menu-comunas .highlight-vina {
+  grid-column: span 2;
+  background: rgba(0, 90, 233, 0.05);
+  font-weight: 700;
+  color: var(--color-accent);
+  border: 1px dashed rgba(0, 90, 233, 0.25);
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+.dropdown-menu-comunas .highlight-vina:hover {
+  background: rgba(0, 90, 233, 0.12);
+  border-color: var(--color-accent);
+}
+
+/* Enlace de Urgencias en Navbar */
+.nav-link-urgencias {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--color-urgent-red) !important;
+}
+
+.nav-link-urgencias:hover {
+  color: #b91c1c !important;
+}
+
+/* Drawer Móvil: Etiquetas de Sección y Chips */
+.drawer-section-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: 0.06em;
+  padding: 0.65rem 0.5rem 0.2rem;
+  text-transform: uppercase;
+}
+
+.drawer-comunas-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 0.4rem 0.25rem 0.65rem 0.5rem;
+  margin: 0.15rem 0 0.5rem 0.15rem;
+  border-left: 2px solid rgba(0, 90, 233, 0.2);
+}
+
+.drawer-chip {
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-text-title);
+  background: var(--color-surface-white);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.drawer-chip:hover {
+  background: rgba(0, 90, 233, 0.08);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  transform: translateY(-1px);
+}
+
+.drawer-chip.chip-highlight {
+  background: rgba(0, 90, 233, 0.1);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  font-weight: 700;
 }
 
 /* Acciones en Header */
