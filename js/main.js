@@ -194,10 +194,25 @@ function initScrollToTop() {
   const btn = document.getElementById('backToTopBtn');
   if (!btn) return;
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 350) {
+  const toggleVisibility = () => {
+    // Aparece cuando el usuario scrollea hacia abajo (más de 300px)
+    if (window.scrollY > 300) {
       btn.classList.add('is-visible');
     } else {
+      btn.classList.remove('is-visible');
+    }
+  };
+
+  window.addEventListener('scroll', toggleVisibility, { passive: true });
+  toggleVisibility();
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+} else {
       btn.classList.remove('is-visible');
     }
   }, { passive: true });
