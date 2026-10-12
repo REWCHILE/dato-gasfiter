@@ -6,6 +6,13 @@ Allow: /llms.txt
 Allow: /llm.txt
 Allow: /llms-full.txt
 Allow: /fullllm.txt
+Allow: /.well-known/ai-catalog.json
+Allow: /.well-known/mcp.json
+Allow: /ai-catalog.json
+
+# Protocolo de Descubrimiento de Agentes de IA (Agentic Resource Discovery)
+Agentmap: https://dato-gasfiter.cl/llms.txt
+Agentmap: https://dato-gasfiter.cl/.well-known/ai-catalog.json
 
 # Mapa del Sitio Oficial
 Sitemap: https://dato-gasfiter.cl/sitemap.xml

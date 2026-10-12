@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "dato-gasfiter": {
+      "name": "DATO GASFITER MCP Server",
+      "description": "Herramientas de contacto y cotización inmediata de gasfitería autorizada SEC a domicilio.",
+      "version": "1.0.0",
+      "tools": [
+        {
+          "name": "solicitar_gasfiter",
+          "description": "Cotizar o agendar atención con gasfiter SEC en Santiago o Viña del Mar.",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "servicio": {
+                "type": "string",
+                "description": "reparacion-calefont, deteccion-fugas, destape-alcantarillado, gas-sec, informe-tecnico o emergencia."
+              },
+              "comuna": {
+                "type": "string",
+                "description": "Comuna o ciudad del cliente."
+              },
+              "detalle": {
+                "type": "string",
+                "description": "Descripción del problema."
+              }
+            },
+            "required": ["servicio", "comuna"],
+            "additionalProperties": false
+          }
+        }
+      ]
+    }
+  }
+}

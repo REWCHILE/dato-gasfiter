@@ -1,0 +1,51 @@
+{
+  "$schema": "https://agenticresourcediscovery.org/schemas/v1/ai-catalog.schema.json",
+  "name": "DATO GASFITER - Servicios de Gasfitería Certificada SEC",
+  "description": "Catálogo oficial para agentes autónomos de IA y LLMs para solicitar presupuestos, información y turnos de urgencia con gasfíteres autorizados SEC en la Región Metropolitana (Santiago) y Región de Valparaíso (Viña del Mar).",
+  "url": "https://dato-gasfiter.cl",
+  "provider": {
+    "name": "DATO GASFITER",
+    "url": "https://dato-gasfiter.cl",
+    "contact": "+56932237072"
+  },
+  "capabilities": [
+    {
+      "type": "webmcp-tool",
+      "name": "solicitar_gasfiter",
+      "title": "Solicitud y Cotización de Gasfiter Certificado SEC",
+      "description": "Herramienta directa para que agentes autónomos de IA puedan cotizar o solicitar visita técnica de urgencia para reparación de calefont, filtraciones de agua, destapes e instalaciones SEC.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "servicio": {
+            "type": "string",
+            "description": "Tipo de servicio requerido: reparacion-calefont, deteccion-fugas, destape-alcantarillado, gas-sec, informe-tecnico o emergencia."
+          },
+          "comuna": {
+            "type": "string",
+            "description": "Comuna o ciudad del cliente (ej. Santiago Centro, Providencia, Las Condes, Vitacura, Viña del Mar)."
+          },
+          "nombre": {
+            "type": "string",
+            "description": "Nombre del cliente solicitante."
+          },
+          "detalle": {
+            "type": "string",
+            "description": "Breve descripción de la falla o requerimiento técnico."
+          }
+        },
+        "required": [
+          "servicio",
+          "comuna"
+        ],
+        "additionalProperties": false
+      },
+      "endpoint": "https://dato-gasfiter.cl/"
+    }
+  ],
+  "resources": {
+    "llms_manifest": "https://dato-gasfiter.cl/llms.txt",
+    "llms_full_manifest": "https://dato-gasfiter.cl/llms-full.txt",
+    "sitemap": "https://dato-gasfiter.cl/sitemap.xml"
+  }
+}

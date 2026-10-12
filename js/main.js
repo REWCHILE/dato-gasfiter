@@ -280,4 +280,92 @@ function initQuickQuote() {
   });
 }
 
+/**
+ * 6. PROTOCOLO WEBMCP (WEB MODEL CONTEXT PROTOCOL) & NAVEGACIÓN AGÉNTICA (4/4)
+ * Registra herramientas programáticas para agentes de IA (Google Gemini, OpenAI Operator, Claude Computer Use)
+ */
+function initWebMCP() {
+  const modelContext = (typeof document !== 'undefined' && document.modelContext) ||
+                       (typeof navigator !== 'undefined' && navigator.modelContext);
+
+  if (modelContext && typeof modelContext.registerTool === 'function') {
+    try {
+      // Herramienta 1: Cotizar y solicitar gasfiter
+      modelContext.registerTool({
+        name: 'solicitar_gasfiter',
+        title: 'Solicitud y Cotización de Gasfiter Certificado SEC',
+        description: 'Permite a agentes de IA solicitar asistencia o cotización de gasfitería autorizada SEC a domicilio en Santiago y Viña del Mar.',
+        inputSchema: {
+          type: 'object',
+          properties: {
+            servicio: {
+              type: 'string',
+              description: 'Tipo de servicio requerido: reparacion-calefont, deteccion-fugas, destape-alcantarillado, gas-sec, informe-tecnico o emergencia.'
+            },
+            comuna: {
+              type: 'string',
+              description: 'Comuna o ciudad del cliente en Chile (ej. Santiago Centro, Providencia, Las Condes, Vitacura, Viña del Mar).'
+            },
+            nombre: {
+              type: 'string',
+              description: 'Nombre del cliente solicitante.'
+            },
+            detalle: {
+              type: 'string',
+              description: 'Detalle o descripción de la falla técnica o urgencia.'
+            }
+          },
+          required: ['servicio', 'comuna'],
+          additionalProperties: false
+        },
+        async execute(params) {
+          const s = (params && params.servicio) || 'Gasfitería General';
+          const c = (params && params.comuna) || 'Santiago';
+          const n = (params && params.nombre) || 'Cliente';
+          const d = (params && params.detalle) || 'Asistencia técnica solicitada vía IA.';
+          const waUrl = `https://wa.me/56932237072?text=${encodeURIComponent('Hola DATO GASFITER, necesito asistencia: ' + s + ' en ' + c + ' (' + n + '): ' + d)}`;
+          return {
+            status: 'success',
+            proveedor: 'DATO GASFITER',
+            certificacion: 'Instalador Certificado SEC Clase 3 / Gas y Agua',
+            telefono_contacto: '+56932237072',
+            tiempo_llegada_estimado: '30 a 45 minutos',
+            enlace_contacto_inmediato: waUrl,
+            cobertura: ['Santiago Centro', 'Providencia', 'Las Condes', 'Vitacura', 'Ñuñoa', 'La Reina', 'Lo Barnechea', 'San Miguel', 'La Florida', 'Maipú', 'Puente Alto', 'Viña del Mar']
+          };
+        }
+      });
+
+      // Herramienta 2: Información institucional y cobertura
+      modelContext.registerTool({
+        name: 'obtener_cobertura_gasfiter',
+        title: 'Obtener Zonas de Cobertura y Horarios de Urgencia',
+        description: 'Consulta las comunas atendidas y disponibilidad de atención técnica de DATO GASFITER.',
+        inputSchema: {
+          type: 'object',
+          properties: {},
+          additionalProperties: false
+        },
+        async execute() {
+          return {
+            status: 'success',
+            empresa: 'DATO GASFITER',
+            telefono_urgencias: '+56932237072',
+            horario: 'Lunes a Domingo • Turnos de Emergencia Activos',
+            tiempo_promedio_llegada: '30 a 45 minutos',
+            ciudades: ['Santiago (Todas las comunas)', 'Viña del Mar', 'Valparaíso', 'Concón']
+          };
+        }
+      });
+    } catch (e) {
+      // Manejo seguro en entornos donde la API aún es experimental
+    }
+  }
+}
+
+// Registro inmediato y reintento en DOMContentLoaded para máxima compatibilidad con Lighthouse
+initWebMCP();
+document.addEventListener('DOMContentLoaded', initWebMCP);
+
+
 
