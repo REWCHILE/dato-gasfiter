@@ -118,8 +118,12 @@ function initComunasTabs() {
 
   tabBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      tabBtns.forEach(b => b.classList.remove('is-active'));
+      tabBtns.forEach(b => {
+        b.classList.remove('is-active');
+        b.setAttribute('aria-selected', 'false');
+      });
       btn.classList.add('is-active');
+      btn.setAttribute('aria-selected', 'true');
 
       const filter = btn.getAttribute('data-filter');
 
