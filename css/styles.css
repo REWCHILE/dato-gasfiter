@@ -218,9 +218,6 @@ ul {
     opacity: 0;
   }
 }
-  70% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
-}
 
 /* --------------------------------------------------------------------------
    HEADER & NAVBAR PRINCIPAL
@@ -235,13 +232,16 @@ ul {
   border-bottom: 1px solid var(--color-border);
   box-shadow: var(--shadow-sm);
   padding: 0.55rem 0; /* Franja blanca con mayor amplitud vertical */
-  transition: box-shadow var(--transition-fast), background var(--transition-fast), padding var(--transition-fast);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .site-header.scrolled {
-  box-shadow: var(--shadow-md);
-  padding: 0.25rem 0;
-  background: rgba(255, 255, 255, 0.98);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 90, 233, 0.12);
+  box-shadow: 0 10px 25px -4px rgba(0, 39, 106, 0.10), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+  padding: 0.2rem 0;
 }
 
 .header-inner {
@@ -250,6 +250,12 @@ ul {
   justify-content: space-between;
   align-items: center;
   height: var(--header-height);
+  transition: height 0.3s cubic-bezier(0.16, 1, 0.3, 1), min-height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.site-header.scrolled .header-inner {
+  min-height: 64px;
+  height: 64px;
 }
 
 /* Logotipo */
@@ -263,6 +269,11 @@ ul {
   height: 52px;
   width: auto;
   object-fit: contain;
+  transition: height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.site-header.scrolled .brand-logo img {
+  height: 42px;
 }
 
 .brand-info {
@@ -277,6 +288,11 @@ ul {
   color: var(--color-primary);
   letter-spacing: -0.02em;
   line-height: 1.1;
+  transition: font-size 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.site-header.scrolled .brand-title {
+  font-size: 1.12rem;
 }
 
 .brand-subtitle {
@@ -285,6 +301,11 @@ ul {
   text-transform: uppercase;
   color: var(--color-accent);
   letter-spacing: 0.05em;
+  transition: font-size 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.site-header.scrolled .brand-subtitle {
+  font-size: 0.65rem;
 }
 
 /* Navegación Desktop */
@@ -1865,14 +1886,14 @@ ul {
 /* Botón Volver Arriba (Scroll to Top) - Ubicado en la esquina inferior derecha */
 .btn-scroll-top {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  bottom: 28px;
+  right: 28px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
   color: #ffffff;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0 4px 18px rgba(0, 39, 106, 0.35);
   display: flex;
   align-items: center;
@@ -1899,6 +1920,16 @@ ul {
 
 .btn-scroll-top:active {
   transform: translateY(-1px) scale(0.96);
+}
+
+.btn-scroll-top svg {
+  pointer-events: none;
+  stroke: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.btn-scroll-top:hover svg {
+  transform: translateY(-2px);
 }
 
 .mobile-bottom-bar {
