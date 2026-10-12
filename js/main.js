@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initComunasTabs();
   initHeaderScroll();
   initQuickQuote();
+  initScrollToTop();
 });
 
 /**
@@ -185,3 +186,27 @@ function initQuickQuote() {
     });
   });
 }
+
+/**
+ * 6. BOTÓN VOLVER ARRIBA (SCROLL TO TOP)
+ */
+function initScrollToTop() {
+  const btn = document.getElementById('backToTopBtn');
+  if (!btn) return;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 350) {
+      btn.classList.add('is-visible');
+    } else {
+      btn.classList.remove('is-visible');
+    }
+  }, { passive: true });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+
