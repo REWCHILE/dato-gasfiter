@@ -266,13 +266,15 @@ ul {
 }
 
 .brand-logo img {
+  width: 52px;
   height: 52px;
-  width: auto;
+  aspect-ratio: 1 / 1;
   object-fit: contain;
-  transition: height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: height 0.3s cubic-bezier(0.16, 1, 0.3, 1), width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .site-header.scrolled .brand-logo img {
+  width: 42px;
   height: 42px;
 }
 
