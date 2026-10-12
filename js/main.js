@@ -217,12 +217,12 @@ function initScrollEffects() {
   // Listener pasivo para máxima fluidez a 60/120 fps
   window.addEventListener('scroll', onScroll, { passive: true });
 
-  // Ejecución inicial diferida al siguiente frame para no bloquear DOMContentLoaded
-  if (window.requestAnimationFrame) {
-    window.requestAnimationFrame(updateScrollState);
-  } else {
-    setTimeout(updateScrollState, 0);
-  }
+  // Solo sincroniza si la página se carga con scroll previo, tras completarse la carga
+  window.addEventListener('load', () => {
+    if ((window.pageYOffset || document.documentElement.scrollTop || 0) > 20) {
+      window.requestAnimationFrame(updateScrollState);
+    }
+  }, { passive: true });
 
   if (backToTopBtn) {
     backToTopBtn.addEventListener('click', () => {
