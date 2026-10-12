@@ -12,6 +12,9 @@ RewriteRule ^(.*)$ https://dato-gasfiter.cl/$1 [R=301,L]
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+index(\.html)?[\s?] [NC]
 RewriteRule ^ / [R=301,L]
 
+# 2b. Redirección 301 de gasfiter-emergencia-24-7 hacia gasfiter-emergencia-urgencias
+RewriteRule ^gasfiter-emergencia-24-7(\.html)?$ /gasfiter-emergencia-urgencias [R=301,L]
+
 # 3. Si se solicita cualquier otro archivo con extensión .html, redirigir a URL limpia (301)
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/([^.]+)\.html [NC]
 RewriteRule ^ %1 [R=301,L]

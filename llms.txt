@@ -16,7 +16,7 @@
 - [Destape de Alcantarillado y Cañerías](https://dato-gasfiter.cl/destape-alcantarillado.html): Desobstrucción con maquinaria Ridgid e hidrojet para desagües, WC, cámaras y colectores comunitarios.
 - [Detección de Fugas de Agua con Geófono](https://dato-gasfiter.cl/deteccion-fugas-agua.html): Localización exacta sin picar baldosas ni muros mediante geófono digital y cámaras termográficas FLIR.
 - [Reparación y Mantención de Calefont](https://dato-gasfiter.cl/reparacion-calefont.html): Servicio técnico multimarca a domicilio (Junkers, Splendid, Mademsa, Trotter, Neckar, Rheem).
-- [Emergencias de Gasfitería Urgencias](https://dato-gasfiter.cl/gasfiter-emergencia-24-7.html): Unidades móviles equipadas para acudir de inmediato ante roturas de matrices, inundaciones o cortes de suministro.
+- [Emergencias de Gasfitería Urgencias](https://dato-gasfiter.cl/gasfiter-emergencia-urgencias.html): Unidades móviles equipadas para acudir de inmediato ante roturas de matrices, inundaciones o cortes de suministro.
 - [Catálogo General de Servicios SEC](https://dato-gasfiter.cl/servicios.html): Pruebas de hermeticidad de gas, proyectos reglamentarios e informes técnicos para seguros.
 
 ## Landings Locales por Comuna (Región Metropolitana)
