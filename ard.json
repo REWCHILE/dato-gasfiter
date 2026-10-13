@@ -1,5 +1,4 @@
 {
-  "$schema": "https://raw.githubusercontent.com/ards-project/ard-spec/main/spec/schemas/ai-catalog.schema.json",
   "specVersion": "1.0",
   "host": {
     "displayName": "DATO GASFITER",
@@ -7,9 +6,9 @@
   },
   "entries": [
     {
-      "identifier": "urn:ai:dato-gasfiter.cl:tools:solicitar-gasfiter",
+      "identifier": "urn:air:dato-gasfiter.cl:tools:solicitar-gasfiter",
       "displayName": "Solicitud y Cotización de Gasfiter SEC a Domicilio",
-      "type": "application/json",
+      "type": "application/mcp-server-card+json",
       "url": "https://dato-gasfiter.cl/.well-known/mcp.json",
       "description": "Permite a agentes de IA y LLMs solicitar asistencia técnica o cotización de gasfitería certificada SEC en Santiago y Viña del Mar ante emergencias o presupuestos.",
       "capabilities": [
