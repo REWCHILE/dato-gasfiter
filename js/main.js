@@ -191,7 +191,7 @@ function initScrollEffects() {
   let ticking = false;
 
   function updateScrollState() {
-    const scrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+    const scrollY = typeof window.scrollY !== 'undefined' ? window.scrollY : (window.pageYOffset || 0);
 
     // Header sticky styling
     if (header) {
@@ -232,11 +232,14 @@ function initScrollEffects() {
   // Listener pasivo para máxima fluidez a 60/120 fps
   window.addEventListener('scroll', onScroll, { passive: true });
 
-  // Solo sincroniza si la página se carga con scroll previo, tras completarse la carga
+  // Solo sincroniza si la página se carga con scroll previo, dentro de requestAnimationFrame para 0 forced reflow
   window.addEventListener('load', () => {
-    if ((window.pageYOffset || document.documentElement.scrollTop || 0) > 20) {
-      window.requestAnimationFrame(updateScrollState);
-    }
+    window.requestAnimationFrame(() => {
+      const initialScroll = typeof window.scrollY !== 'undefined' ? window.scrollY : (window.pageYOffset || 0);
+      if (initialScroll > 20) {
+        updateScrollState();
+      }
+    });
   }, { passive: true });
 
   if (backToTopBtn) {
